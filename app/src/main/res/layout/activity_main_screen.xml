@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <Button
+        android:id="@+id/appLoginButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/appExternalIntButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/appExternalIntButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="browser"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/openListView"
+        app:layout_constraintEnd_toEndOf="@+id/appLoginButton"
+        app:layout_constraintStart_toStartOf="@+id/appLoginButton"
+        app:layout_constraintTop_toBottomOf="@+id/appLoginButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/openListView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="list view"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/openRecycleView"
+        app:layout_constraintEnd_toEndOf="@+id/appExternalIntButton"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/appExternalIntButton"
+        app:layout_constraintTop_toBottomOf="@+id/appExternalIntButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/openRecycleView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="recycle view"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/openSpinnerViewButton"
+        app:layout_constraintEnd_toEndOf="@+id/openListView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/appExternalIntButton"
+        app:layout_constraintTop_toBottomOf="@+id/openListView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/openSpinnerViewButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="spinner view"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/showDialogButton"
+        app:layout_constraintEnd_toEndOf="@+id/openRecycleView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/openRecycleView"
+        app:layout_constraintTop_toBottomOf="@+id/openRecycleView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/showDialogButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="show dialog"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/startFragmentActivityButton"
+        app:layout_constraintEnd_toEndOf="@+id/openRecycleView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/openRecycleView"
+        app:layout_constraintTop_toBottomOf="@+id/openSpinnerViewButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/startFragmentActivityButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="show fragment screen"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewPagerActivityButton"
+        app:layout_constraintStart_toStartOf="@+id/showDialogButton"
+        app:layout_constraintTop_toBottomOf="@+id/showDialogButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/viewPagerActivityButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="view pager"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/navigationDrawerActivityButton"
+        app:layout_constraintStart_toStartOf="@+id/startFragmentActivityButton"
+        app:layout_constraintTop_toBottomOf="@+id/startFragmentActivityButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/navigationDrawerActivityButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Nav Drawer"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavActivityButton"
+        app:layout_constraintStart_toStartOf="@+id/viewPagerActivityButton"
+        app:layout_constraintTop_toBottomOf="@+id/viewPagerActivityButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bottomNavActivityButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Bottom Nav"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/navigationDrawerActivityButton"
+        app:layout_constraintTop_toBottomOf="@+id/navigationDrawerActivityButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
